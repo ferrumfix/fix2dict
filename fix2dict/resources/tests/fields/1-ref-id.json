@@ -1,0 +1,11 @@
+[
+  "2841",
+  {
+    "name": "UnderlyingRefID",
+    "datatype": "String",
+    "docs": {
+      "description": "Identifies ..."
+    },
+    "history": {}
+  }
+]

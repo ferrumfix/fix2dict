@@ -1,0 +1,9 @@
+<Datatype added="FIX.4.3">
+    <Name>Length</Name>
+    <BaseType>int</BaseType>
+    <Description>foobar</Description>
+    <XML>
+        <BuiltIn>0</BuiltIn>
+        <Base>xs:nonNegativeInteger</Base>
+    </XML>
+</Datatype>

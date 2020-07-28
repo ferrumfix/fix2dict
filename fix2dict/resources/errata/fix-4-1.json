@@ -1,0 +1,89 @@
+[
+  {
+    "op": "replace",
+    "path": "/datatypes/char/description/body",
+    "value": "Alpha-numeric free format strings, can include any character or punctuation except the delimiter. All char fields are case sensitive (e.g. `morstatt` is different from `Morstatt`)."
+  },
+  {
+    "op": "add",
+    "path": "/sections/Session",
+    "value": {
+      "fixml": {
+        "optional": true,
+        "filename": "session"
+      },
+      "description": {
+        "body": "Session level messages to establish and control a FIX session",
+        "volume": null
+      },
+      "history": {
+        "added": {
+          "fix": "fix",
+          "major": "4",
+          "minor": "0",
+          "ep": "0",
+          "sp": null
+        },
+        "updated": null,
+        "deprecated": null
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/sections/PreTrade",
+    "value": {
+      "fixml": {
+        "optional": false,
+        "filename": "pretrade"
+      },
+      "description": {
+        "body": "Pre trade messages including reference data, market data, quoting, news and email, indication of interest",
+        "volume": "3"
+      },
+      "history": {
+        "added": null,
+        "updated": null,
+        "deprecated": null
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/sections/Trade",
+    "value": {
+      "fixml": {
+        "optional": false,
+        "filename": "trade"
+      },
+      "description": {
+        "body": "Order handling and execution messages",
+        "volume": "4"
+      },
+      "history": {
+        "added": null,
+        "updated": null,
+        "deprecated": null
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/sections/PostTrade",
+    "value": {
+      "fixml": {
+        "optional": false,
+        "filename": "posttrade"
+      },
+      "description": {
+        "body": "Post trade messages including trade reporting, allocation, collateral, confirmation, position mantemenance, registration instruction, and settlement instructions",
+        "volume": "5"
+      },
+      "history": {
+        "added": null,
+        "updated": null,
+        "deprecated": null
+      }
+    }
+  }
+]

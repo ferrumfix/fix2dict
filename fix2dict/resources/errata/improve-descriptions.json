@@ -1,0 +1,13 @@
+[
+  {
+    "op": "replace",
+    "path": "/datatypes/int/description",
+    "value": {
+      "body": "Sequence of digits without commas or decimals and optional sign character (ASCII characters \"-\" and \"0\" - \"9\" ). The sign character utilizes one byte (i.e. positive int is \"99999\" while negative int is \"-99999\"). Note that int values may contain leading zeros (e.g. \"00023\" = \"23\"). The following data types are based on int.",
+      "examples": [
+        "723 in field 21 would be mapped int as |21=723|.",
+        "-723 in field 12 would be mapped int as |12=-723|"
+      ]
+    }
+  }
+]

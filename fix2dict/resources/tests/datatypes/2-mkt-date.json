@@ -1,0 +1,18 @@
+[
+  "LocalMktDate",
+  {
+    "base": "String",
+    "docs": {
+      "description": "foobar",
+      "examples": ["BizDate=\"2003-09-10\""]
+    },
+    "history": {
+      "added": {
+        "fix": "fix",
+        "major": "4",
+        "minor": "2",
+        "sp": "0"
+      }
+    }
+  }
+]

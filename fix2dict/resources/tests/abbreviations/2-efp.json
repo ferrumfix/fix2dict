@@ -1,0 +1,15 @@
+[
+  "EFP",
+  {
+    "term": "ExchangeForPhysical",
+    "docs": {},
+    "history": {
+      "added": {
+        "fix": "fix",
+        "major": "4",
+        "minor": "4",
+        "sp": "0"
+      }
+    }
+  }
+]

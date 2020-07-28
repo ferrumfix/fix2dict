@@ -1,0 +1,16 @@
+[
+  "Detl",
+  {
+    "term": "Detail",
+    "docs": {},
+    "history": {
+      "added": {
+        "fix": "fix",
+        "major": "5",
+        "minor": "0",
+        "sp": "1",
+        "ep": "77"
+      }
+    }
+  }
+]

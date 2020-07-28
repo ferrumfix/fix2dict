@@ -1,0 +1,12 @@
+<Datatype added="FIX.4.2">
+    <Name>LocalMktDate</Name>
+    <BaseType>String</BaseType>
+    <Description>foobar</Description>
+    <Example>BizDate="2003-09-10"</Example>
+    <XML>
+        <BuiltIn>0</BuiltIn>
+        <Base>xs:date</Base>
+        <Description>spam</Description>
+        <Example>BizDate="2003-09-10"</Example>
+    </XML>
+</Datatype>
