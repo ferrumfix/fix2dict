@@ -2,7 +2,7 @@ import nltk
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from xml.etree.ElementTree import Element
 
-from .utils import parse_protocol_version
+from fix2dict.utils import parse_protocol_version
 
 
 def link_to_fix_version(v: str):

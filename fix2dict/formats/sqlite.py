@@ -2,7 +2,7 @@ import sqlite3
 from sqlite3 import Error
 import pkg_resources
 
-from ..resources import PKG_NAME
+from fix2dict.resources import PKG_NAME
 
 def dict_to_mem_sqlite(data, conn):
     sql_setup = pkg_resources.resource_string(

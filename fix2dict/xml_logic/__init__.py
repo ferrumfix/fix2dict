@@ -1,3 +1,18 @@
+"""
+XML-parsing logic for generic FIX Repository data. Several "flavors" of FIX
+Repository are supported:
+
+- FIX Basic,
+- FIX Intermediate,
+- FIX Unified,
+- FIX Orchestra.
+
+These are all similar enough to one another that we can reuse the same
+parsing logic for everything. The parsing process it thus "fuzzy", i.e. it
+accepts quite a lot more data than technically allowed by each standard in
+attempt to simplify the process.
+"""
+
 from .elem_abbreviation import (
     xml_to_abbreviations,
     xml_to_abbreviation,

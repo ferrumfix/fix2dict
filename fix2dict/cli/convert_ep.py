@@ -1,9 +1,9 @@
 import click
 
-from . import cli
-from .utils.xml import read_xml_root
-from .utils.json import beautify_json
-from ..extension_pack import ExtensionPack
+from fix2dict.cli import cli
+from fix2dict.cli.utils.xml import read_xml_root
+from fix2dict.cli.utils.json import beautify_json
+from fix2dict.extension_pack import ExtensionPack
 
 
 @cli.command()

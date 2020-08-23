@@ -1,6 +1,6 @@
 from jsonpatch import JsonPatch, JsonPatchException
 
-from .schema import validate_v1
+from fix2dict.schema import validate_v1
 
 
 def apply_patch(data, patch: JsonPatch):

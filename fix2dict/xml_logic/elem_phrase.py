@@ -1,4 +1,4 @@
-from .utils import xml_to_sorted_dict, xml_get_history, filter_none
+from fix2dict.xml_logic.utils import xml_to_sorted_dict, xml_get_history, filter_none
 
 
 def xml_to_docs_definitions(root):

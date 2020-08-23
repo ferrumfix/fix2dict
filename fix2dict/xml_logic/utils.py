@@ -1,6 +1,6 @@
 from natsort import natsorted
 
-from ..fix_version import FixVersion
+from fix2dict.fix_version import FixVersion
 
 
 def get_fuzzy(elem, *keys):

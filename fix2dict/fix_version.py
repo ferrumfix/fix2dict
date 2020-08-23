@@ -1,3 +1,7 @@
+"""
+Utilities for FIX protocol versioning.
+"""
+
 class FixVersion:
     def __init__(self, val: str, ep=None):
         if "_EP" in val:

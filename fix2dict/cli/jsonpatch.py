@@ -2,15 +2,15 @@ import json
 import jsonpatch
 import click
 
-from . import cli
-from .utils.json import read_json, DEFAULT_INDENT
-from ..patch import apply_patch
+from fix2dict.cli import cli
+from fix2dict.cli.utils.json import read_json, DEFAULT_INDENT
+from fix2dict.patch import apply_patch
 
 
-@cli.command()
+@cli.command("jsonpatch")
 @click.argument("src", nargs=1, type=click.Path(exists=True))
 @click.argument("path-to-patch", nargs=1, type=click.Path(exists=True))
-def jsonpatch(src, path_to_patch):
+def patch(src, path_to_patch):
     """
     Apply a JSON Patch file.
     """

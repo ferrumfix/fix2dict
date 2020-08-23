@@ -1,5 +1,5 @@
 from .elem_enum import xml_to_enum
-from .utils import (
+from fix2dict.xml_logic.utils import (
     xml_to_sorted_dict,
     xml_get_docs,
     xml_get_history,
