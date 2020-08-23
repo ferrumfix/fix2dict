@@ -1,11 +1,8 @@
-from .__version__ import __version__
-from .resources import LEGAL_INFO
-from .fix_version import FixVersion
 import sys
 from xml.etree.ElementTree import Element
 
-from .utils import iso8601_utc
-from .xml_logic import (
+from ..utils import iso8601_utc
+from ..xml_logic import (
     xml_to_abbreviations,
     xml_to_categories,
     xml_to_components,
@@ -19,8 +16,10 @@ from .xml_logic import (
     embed_msg_contents_into_message,
     embed_msg_contents_into_component,
 )
-from .xml_logic.utils import get_fuzzy
-
+from ..xml_logic.utils import get_fuzzy
+from ..__version__ import __version__
+from ..resources import LEGAL_INFO
+from ..fix_version import FixVersion
 
 def transform_basic_repository_v1(
     abbreviations: Element,

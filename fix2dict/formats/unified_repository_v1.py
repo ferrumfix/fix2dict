@@ -1,12 +1,12 @@
-from .__version__ import __version__
-from .resources import LEGAL_INFO
-from .fix_version import FixVersion
+from ..__version__ import __version__
+from ..resources import LEGAL_INFO
+from ..fix_version import FixVersion
 import sys
 from xml.etree.ElementTree import Element
 
-from .fix_version import FixVersion
-from .utils import iso8601_utc
-from .xml_logic import (
+from ..fix_version import FixVersion
+from ..utils import iso8601_utc
+from ..xml_logic import (
     xml_to_abbreviations,
     xml_to_categories,
     xml_to_components,

@@ -8,9 +8,9 @@ from ..extension_pack import ExtensionPack
 
 @cli.command()
 @click.argument("src", nargs=1, type=click.Path(exists=True))
-def inflate(src):
+def convert_ep(src):
     """
-    Transform an XML-formatted EP file into a JSON Patch.
+    Convert Expansion Pack files from one format to another.
 
     <SRC> must be a valid XML file containing the definition of an Extension
     Pack. The resulting JSON Patch will be printed.
