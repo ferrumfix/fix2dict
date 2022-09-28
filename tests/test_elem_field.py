@@ -1,8 +1,7 @@
 import unittest
-from fix2dict.xml_logic import (
-    xml_to_field,
-)
-from fix2dict.resources import test_cases
+
+from fix2json.resources import test_cases
+from fix2json.xml_logic import xml_to_field
 
 
 class TestElemField(unittest.TestCase):

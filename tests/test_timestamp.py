@@ -1,6 +1,7 @@
-import unittest
 import datetime
-from fix2dict.utils import iso8601_utc
+import unittest
+
+from fix2json.utils import iso8601_utc
 
 
 class TestTimestamp(unittest.TestCase):

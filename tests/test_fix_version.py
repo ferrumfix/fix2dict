@@ -1,7 +1,7 @@
 import unittest
 from xml.etree import ElementTree
 
-from fix2dict.fix_version import FixVersion
+from fix2json.fix_version import FixVersion
 
 
 class TestFixVersionFromString(unittest.TestCase):

@@ -1,8 +1,7 @@
 import unittest
-from fix2dict.xml_logic import (
-    xml_to_datatype,
-)
-from fix2dict.resources import test_cases
+
+from fix2json.resources import test_cases
+from fix2json.xml_logic import xml_to_datatype
 
 
 class TestElemDatatype(unittest.TestCase):

@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://raw.githubusercontent.com/neysofu/fix2json/master/fix2json/resources/fix2json-json-schema.json",
+  "title": "Output format of FIX2json",
+  "type": "object",
+  "required": [
+    "meta",
+    "abbreviations",
+    "datatypes",
+    "sections",
+    "categories",
+    "components",
+    "fields",
+    "messages"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string"
+        },
+        "version": {
+          "$ref": "#/definitions/version"
+        },
+        "fix2json": {
+          "type": "object",
+          "properties": {
+            "fix2json": {
+              "$ref": "#/definitions/fix2json"
+            }
+          }
+        }
+      },
+      "required": [
+        "version"
+      ]
+    },
+    "abbreviations": {
+      "type": "object",
+      "items": {
+        "$ref": "#/definitions/abbreviation"
+      }
+    },
+    "datatypes": {
+      "type": "object",
+      "items": {
+        "$ref": "#/definitions/datatype"
+      }
+    },
+    "sections": {
+      "type": "object",
+      "items": {
+        "$ref": "#/definitions/section"
+      }
+    },
+    "categories": {
+      "type": "object",
+      "items": {
+        "$ref": "#/definitions/category"
+      }
+    },
+    "fields": {
+      "type": "object",
+      "items": {
+        "$ref": "#/definitions/field"
+      }
+    },
+    "components": {
+      "type": "object",
+      "items": {
+        "$ref": "#/definitions/component"
+      }
+    },
+    "messages": {
+      "type": "object",
+      "items": {
+        "$ref": "#/definitions/message"
+      }
+    }
+  },
+  "definitions": {
+    "fix2json": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "The version of FIX2json used to generate this document.",
+          "examples": [
+            "1.1.0"
+          ]
+        },
+        "md5": {
+          "type": "string",
+          "description": "MD5 signature of the sourcing directory."
+        },
+        "command": {
+          "type": "string",
+          "description": "The command-line invocation string that generated this document."
+        },
+        "legal": {
+          "type": "string",
+          "description": "Legal and copyright information regarding the output."
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "examples": [
+            "2020-03-15T06:01:45Z"
+          ]
+        }
+      }
+    },
+    "version": {
+      "type": "object",
+      "properties": {
+        "fix": {
+          "type": "string",
+          "examples": [
+            "fix",
+            "fixt"
+          ]
+        },
+        "major": {
+          "type": "string"
+        },
+        "minor": {
+          "type": "string"
+        },
+        "sp": {
+          "type": "string"
+        },
+        "ep": {
+          "type": [
+            "string",
+            "array"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "fix": "fix",
+          "major": "5",
+          "minor": "0",
+          "sp": "2"
+        }
+      ],
+      "required": [
+        "fix",
+        "major",
+        "minor",
+        "sp"
+      ]
+    },
+    "description": {
+      "type": "object",
+      "properties": {
+        "body": {
+          "type": "string"
+        },
+        "elaboration": {
+          "type": "string"
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "history": {
+      "type": "object",
+      "properties": {
+        "added": {
+          "$ref": "#/definitions/version"
+        },
+        "updated": {
+          "$ref": "#/definitions/version"
+        },
+        "deprecated": {
+          "$ref": "#/definitions/version"
+        },
+        "replaced": {
+          "$ref": "#/definitions/version"
+        }
+      },
+      "examples": [
+        {
+          "added": {
+            "fix": "fix",
+            "major": "4",
+            "minor": "4",
+            "sp": "0"
+          }
+        }
+      ]
+    },
+    "abbreviation": {
+      "type": "object",
+      "properties": {
+        "term": {
+          "type": "string",
+          "description": "The full term of this abbreviation."
+        },
+        "description": {
+          "$ref": "#/definitions/description"
+        },
+        "history": {
+          "$ref": "#/definitions/history"
+        }
+      },
+      "required": [
+        "term",
+        "description",
+        "history"
+      ]
+    },
+    "datatype": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": "string"
+        },
+        "description": {
+          "$ref": "#/definitions/description"
+        },
+        "history": {
+          "$ref": "#/definitions/history"
+        }
+      },
+      "required": [
+        "base",
+        "description",
+        "history"
+      ]
+    },
+    "section": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "$ref": "#/definitions/description"
+        },
+        "history": {
+          "$ref": "#/definitions/history"
+        }
+      }
+    }
+  }
+}
